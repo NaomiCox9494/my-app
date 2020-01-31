@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald");
+
+body {
+  margin: 0;
+  font-family: 'Oswald', 'Cardo';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.hero { 
+  background-color: #E1B9B1 ;
+  min-height: 100vh;
+  /* max-height: 100vh; */
+  display: flex;
+  position: relative;
+}
+
+.hero:after { 
+  content: '';
+  clear: both;
+  /* display: block; */
+}
+
+.heroImage{
+  width: 50vw;
+  min-height: 100vh;
+  object-fit: cover;
+  object-position: 99%;
+}
+
+.heroDesc{
+  color: #fff;
+  font-family: Cardo;
+  font-size: 65px;
+  font-weight: 500;
+  /* margin-left: 75px; */
+  margin-left: 7vw;
+    margin-top: 27vh;
+  line-height: 80px;
+  /* margin-top: 335px; */
+}
+
+.heroDesc_container{
+  /* added this */
+  float: right;
+  margin-right: calc(40vw - 325px);
+  width: 400px;
+  z-index: 10;
+}
+
+.desc_standout{
+  font-weight: 700;
+  color: #614051;
+  
+}
+
+.hero h3 {
+  /* added this */
+  right: 31vw;
+  font-size: 30px;
+    margin-left: 75px;
+    /* margin-top: 100px; */
+    margin-top: 10vh;
+    color: #614051;
+    z-index: 5;
+    position: absolute;
+}
+
+.about{
+  /* added this */
+  margin-right: 0px;
+    position: relative;
+    float: right;
+    margin-top: 7vh;
+    opacity: 0.3;
+    color: #9DA191;
+    font-family: Oswald;
+    letter-spacing: 35px;
+    font-weight: 700;
+    font-size: 370px;
+    writing-mode: vertical-lr;
+    text-orientation: sideways;
+    transform: rotate(180deg);
+    z-index: 0;
+
+}
+
+.leftSide{
+  position: fixed;
+}
+
+.rightSide{
+  /* overflow-y: scroll; */
+  overflow-x: hidden;
+}
+
+.about_scroll{
+  margin-left: 50vw;
+    padding-left: 40px;
+    width: 41vw;
+    margin-top: 40vh;
+}
+
+.about_desc{
+  color: #fff;
+  font-family: Cardo;
+  font-size: 30px;
+  font-weight: 400;
+}
