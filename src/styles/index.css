@@ -69,7 +69,7 @@ position: relative;
 color: #9DA191;
 font-family: Oswald;
 letter-spacing: 28px;
-font-size: calc(300px + (300 - 280) * ((100vw - 300px) / (1600 - 300)));
+font-size: calc(280px + (280 - 220) * ((100vw - 280px) / (1600 - 280)));
 writing-mode: vertical-lr;
 -webkit-text-orientation: sideways;
 text-orientation: sideways;
@@ -87,8 +87,16 @@ float: right;
 
 .rightSide{
   position: relative;
-  width: 50%;
-  float: right;
+    width: 50%;
+    float: right;
+    background-color: #E1B9B1;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.aboutMe{
+  display: inline-block;
 }
 
 
