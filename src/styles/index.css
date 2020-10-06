@@ -5,7 +5,13 @@ body {
   font-family: 'Oswald', 'Cardo';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow: hidden;
+  /* overflow: hidden; */
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
 }
 
 code {
@@ -112,3 +118,62 @@ float: right;
 }
 
 
+/* PROJECTS */
+
+.projectBar_1{
+  display: flex;
+}
+
+.medProject{
+  width: 40%;
+  height: 300px;
+}
+
+.largeProject{
+  width: 60%;
+  height: 300px;
+}
+
+.projectBar_2{
+  display: flex;
+  margin-top: 10px;
+}
+
+.halfProj{
+  width: 50%;
+  height: 400px;
+}
+
+.purpleBorder{
+  border: solid 3px #614051;
+  border-radius: 5px;
+}
+
+.projects{
+  margin-right: -20px;
+    position: relative;
+    color: #9DA191;
+    font-family: Oswald;
+    letter-spacing: 15px;
+    font-size: calc(200px + (200 - 180) * ((100vw - 180px) / (1600 - 280)));
+    writing-mode: vertical-lr;
+    -webkit-text-orientation: sideways;
+    text-orientation: sideways;
+    transform: rotate(180deg);
+    z-index: 10;
+    opacity: 0.3;
+    bottom: 0;
+    line-height: 100%;
+    float: right;
+    margin-left: 0px;
+}
+
+/* reusable stuff */
+
+.margin_left_20{
+  margin-left: 20px
+}
+
+.margin_right_20{
+  margin-right: 20px
+}

@@ -43,8 +43,33 @@ class App extends Component {
                         </div>
                     </div>
                 </div>
-                <div>
-                    <p>hello text after hero</p>
+                <div className='projectContainer' style={{marginTop: '40px'}}>
+                    <p className="projects">Projects</p>
+                    {/* bar one */}
+                    <div className='projectBar_1'>
+                        <div className='medProject purpleBorder margin_left_20' style={{ marginRight: '10px' }}>
+                            hieeee
+                        </div>
+                        <div className='largeProject purpleBorder margin_right_20'>
+                            hieeeee 22222
+                        </div>
+                    </div>
+                    {/* bar two */}
+                    <div className='projectBar_2'>
+                        <div className='halfProj purpleBorder margin_left_20' style={{ marginRight: '10px' }}>
+                            hieeee
+                        </div>
+                        <div className='halfProj margin_right_20'>
+                            {/* split divs */}
+                            <div className='purpleBorder' style={{ height: '50%' }}>
+                                50
+                            </div>
+                            <div className='purpleBorder' style={{ height: '184px', marginTop: '10px' }}>
+                                bottom 50
+                            </div>
+                        </div>
+                    </div>
+                    <p>hello text after herohello text after herohello text after herohello text after hero</p>
                 </div>
             </div>
         )
