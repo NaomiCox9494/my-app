@@ -5,7 +5,7 @@ body {
   font-family: 'Oswald', 'Cardo';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 code {
@@ -97,7 +97,18 @@ float: right;
 
 .aboutMe{
   display: inline-block;
+  width: 90%;
+  padding: 50px 60px;
+  font-size: 30px;
+  line-height: 29px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  margin-top: 50px
 }
 
+.accentColor{
+  font-weight: 600;
+  color: #614051;
+}
 
 
