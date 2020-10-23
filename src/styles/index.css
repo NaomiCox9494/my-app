@@ -7,6 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   /* overflow: hidden; */
   overflow-x: hidden;
+  scrollbar-width: none;
 }
 
 ::-webkit-scrollbar {
@@ -148,7 +149,7 @@ code {
 }
 
 .projects {
-  margin-right: -20px;
+  margin-left: -20px;
   position: relative;
   color: #9da191;
   font-family: Oswald;
@@ -157,32 +158,38 @@ code {
   writing-mode: vertical-lr;
   -webkit-text-orientation: sideways;
   text-orientation: sideways;
-  transform: rotate(180deg);
   z-index: 10;
   opacity: 0.3;
   bottom: 0;
   line-height: 100%;
-  float: right;
-  margin-left: 0px;
+  float: left;
+  margin-right: 0px;
 }
 
 /* FORM */
+.contactForm {
+  width: 70vw;
+  margin-right: 0px;
+  display: inline-block;
+  position: absolute;
+  margin-top: 25px;
+}
+
 input[type="text"],
 select,
 textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
 
-/* Style the submit button with a specific background color etc */
 input[type="submit"] {
-  background-color: #4caf50;
+  background-color: #9da191;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -190,16 +197,35 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
 input[type="submit"]:hover {
-  background-color: #45a049;
+  background-color: #614051;
 }
 
-/* Add a background color and some padding around the form */
 .container {
+  width: 100vw;
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: #e1b9b1;
   padding: 20px;
+  margin-top: 85px;
+  display: inline-block;
+}
+
+.contact {
+  margin-right: -45px;
+  position: relative;
+  color: #9da191;
+  font-family: Oswald;
+  letter-spacing: 10px;
+  font-size: calc(220px + (220 - 200) * ((100vw - 220px) / (1600 - 220)));
+  writing-mode: vertical-lr;
+  -webkit-text-orientation: sideways;
+  text-orientation: sideways;
+  transform: rotate(180deg);
+  z-index: 10;
+  opacity: 0.3;
+  bottom: 0;
+  line-height: 130%;
+  float: right;
 }
 
 /* reusable stuff */

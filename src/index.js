@@ -70,27 +70,23 @@ class App extends Component {
                             </div>
                         </div>
                     </div>
-                    <p>hello text after herohello text after herohello text after herohello text after hero</p>
                 </div>
                 {/* form */}
-                <div class="container">
-                <form action="action_page.php">
+                <div className="container">
+                <p className="contact">Contact</p>
+                <form action="action_page.php" className='contactForm'>
 
-                    <label for="fname">First Name</label>
+                    <label>First Name</label>
                     <input type="text" id="fname" name="firstname" placeholder="Your name.."/>
 
-                    <label for="lname">Last Name</label>
+                    <label>Last Name</label>
                     <input type="text" id="lname" name="lastname" placeholder="Your last name.."/>
 
-                    <label for="country">Country</label>
-                    <select id="country" name="country">
-                    <option value="australia">Australia</option>
-                    <option value="canada">Canada</option>
-                    <option value="usa">USA</option>
-                    </select>
+                     <label>Email</label>
+                    <input type="text" id="email" name="email" placeholder="email address"/>
 
-                    <label for="subject">Subject</label>
-                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                    <label>Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style={{ height:"200px"}}></textarea>
 
                     <input type="submit" value="Submit"/>
                 </form>
