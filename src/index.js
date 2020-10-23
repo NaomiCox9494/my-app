@@ -43,6 +43,7 @@ class App extends Component {
                         </div>
                     </div>
                 </div>
+                {/* projects */}
                 <div className='projectContainer' style={{marginTop: '40px'}}>
                     <p className="projects">Projects</p>
                     {/* bar one */}
@@ -69,7 +70,26 @@ class App extends Component {
                             </div>
                         </div>
                     </div>
-                    <p>hello text after herohello text after herohello text after herohello text after hero</p>
+                </div>
+                {/* form */}
+                <div className="container">
+                <p className="contact">Contact</p>
+                <form action="action_page.php" className='contactForm'>
+
+                    <label>First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name.."/>
+
+                    <label>Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name.."/>
+
+                     <label>Email</label>
+                    <input type="text" id="email" name="email" placeholder="email address"/>
+
+                    <label>Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style={{ height:"200px"}}></textarea>
+
+                    <input type="submit" value="Submit"/>
+                </form>
                 </div>
             </div>
         )
