@@ -2,7 +2,7 @@
 
 body {
   margin: 0;
-  font-family: 'Oswald', 'Cardo';
+  font-family: "Oswald", "Cardo";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* overflow: hidden; */
@@ -10,29 +10,29 @@ body {
 }
 
 ::-webkit-scrollbar {
-    width: 0px;  /* Remove scrollbar space */
-    background: transparent;  /* Optional: just make scrollbar invisible */
+  width: 0px; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-.hero { 
-  background-color: #E1B9B1;
+.hero {
+  background-color: #e1b9b1;
   position: relative;
   height: 100vh;
 }
 
-.heroImage{
+.heroImage {
   width: 50vw;
   height: 100vh;
   object-fit: cover;
   position: absolute;
 }
 
-.heroDesc{
+.heroDesc {
   color: #fff;
   font-family: Cardo;
   font-size: 65px;
@@ -45,7 +45,7 @@ code {
   float: right;
 }
 
-.heroDesc_container{
+.heroDesc_container {
   margin-right: calc(50vw - 530px);
   z-index: 10;
   position: absolute;
@@ -53,55 +53,54 @@ code {
   top: 115px;
 }
 
-.desc_standout{
+.desc_standout {
   font-weight: 700;
   color: #614051;
-  
 }
 
 .hero h3 {
-font-size: 30px;
-margin-left: 100px;
-margin-top: 10vh;
-color: #614051;
-z-index: 5;
-position: absolute;
-/* right: calc(50% - 230px); */
+  font-size: 30px;
+  margin-left: 100px;
+  margin-top: 10vh;
+  color: #614051;
+  z-index: 5;
+  position: absolute;
+  /* right: calc(50% - 230px); */
 }
 
-.about{
-margin-right: -100px;
-position: relative;
-color: #9DA191;
-font-family: Oswald;
-letter-spacing: 28px;
-font-size: calc(280px + (280 - 220) * ((100vw - 280px) / (1600 - 280)));
-writing-mode: vertical-lr;
--webkit-text-orientation: sideways;
-text-orientation: sideways;
-transform: rotate(180deg);
-z-index: 10;
-opacity: 0.3;
-bottom: 0;
-line-height: 130%;
-float: right;
+.about {
+  margin-right: -100px;
+  position: relative;
+  color: #9da191;
+  font-family: Oswald;
+  letter-spacing: 28px;
+  font-size: calc(280px + (280 - 220) * ((100vw - 280px) / (1600 - 280)));
+  writing-mode: vertical-lr;
+  -webkit-text-orientation: sideways;
+  text-orientation: sideways;
+  transform: rotate(180deg);
+  z-index: 10;
+  opacity: 0.3;
+  bottom: 0;
+  line-height: 130%;
+  float: right;
 }
 
-.leftSide{
+.leftSide {
   position: relative;
 }
 
-.rightSide{
+.rightSide {
   position: relative;
-    width: 50%;
-    float: right;
-    background-color: #E1B9B1;
-    height: 100vh;
-    overflow-y: scroll;
-    overflow-x: hidden;
+  width: 50%;
+  float: right;
+  background-color: #e1b9b1;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
-.aboutMe{
+.aboutMe {
   display: inline-block;
   width: 90%;
   padding: 50px 60px;
@@ -109,71 +108,106 @@ float: right;
   line-height: 29px;
   font-weight: 400;
   letter-spacing: 0px;
-  margin-top: 50px
+  margin-top: 50px;
 }
 
-.accentColor{
+.accentColor {
   font-weight: 600;
   color: #614051;
 }
 
-
 /* PROJECTS */
 
-.projectBar_1{
+.projectBar_1 {
   display: flex;
 }
 
-.medProject{
+.medProject {
   width: 40%;
   height: 300px;
 }
 
-.largeProject{
+.largeProject {
   width: 60%;
   height: 300px;
 }
 
-.projectBar_2{
+.projectBar_2 {
   display: flex;
   margin-top: 10px;
 }
 
-.halfProj{
+.halfProj {
   width: 50%;
   height: 400px;
 }
 
-.purpleBorder{
+.purpleBorder {
   border: solid 3px #614051;
   border-radius: 5px;
 }
 
-.projects{
+.projects {
   margin-right: -20px;
-    position: relative;
-    color: #9DA191;
-    font-family: Oswald;
-    letter-spacing: 15px;
-    font-size: calc(200px + (200 - 180) * ((100vw - 180px) / (1600 - 280)));
-    writing-mode: vertical-lr;
-    -webkit-text-orientation: sideways;
-    text-orientation: sideways;
-    transform: rotate(180deg);
-    z-index: 10;
-    opacity: 0.3;
-    bottom: 0;
-    line-height: 100%;
-    float: right;
-    margin-left: 0px;
+  position: relative;
+  color: #9da191;
+  font-family: Oswald;
+  letter-spacing: 15px;
+  font-size: calc(200px + (200 - 180) * ((100vw - 180px) / (1600 - 280)));
+  writing-mode: vertical-lr;
+  -webkit-text-orientation: sideways;
+  text-orientation: sideways;
+  transform: rotate(180deg);
+  z-index: 10;
+  opacity: 0.3;
+  bottom: 0;
+  line-height: 100%;
+  float: right;
+  margin-left: 0px;
+}
+
+/* FORM */
+input[type="text"],
+select,
+textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
 
 /* reusable stuff */
 
-.margin_left_20{
-  margin-left: 20px
+.margin_left_20 {
+  margin-left: 20px;
 }
 
-.margin_right_20{
-  margin-right: 20px
+.margin_right_20 {
+  margin-right: 20px;
 }
