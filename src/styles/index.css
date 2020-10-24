@@ -188,7 +188,7 @@ textarea {
   resize: vertical;
 }
 
-input[type="submit"] {
+.formBtn {
   background-color: #9da191;
   color: white;
   padding: 12px 20px;
@@ -197,7 +197,7 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-input[type="submit"]:hover {
+.formBtn:hover {
   background-color: #614051;
 }
 

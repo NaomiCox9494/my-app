@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
+import React, { Component, useState } from 'react'
 import ReactDOM from 'react-dom'
 import './styles/index.css'
 import girl from './styles/images/girl.jpeg'
-
+import Form from './form.js'
 
 class App extends Component {
-    render() {
+    render() {      
         return (
             <div>
                 <div className="hero">
@@ -72,25 +72,7 @@ class App extends Component {
                     </div>
                 </div>
                 {/* form */}
-                <div className="container">
-                <p className="contact">Contact</p>
-                <form action="action_page.php" className='contactForm'>
-
-                    <label>First Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name.."/>
-
-                    <label>Last Name</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name.."/>
-
-                     <label>Email</label>
-                    <input type="text" id="email" name="email" placeholder="email address"/>
-
-                    <label>Subject</label>
-                    <textarea id="subject" name="subject" placeholder="Write something.." style={{ height:"200px"}}></textarea>
-
-                    <input type="submit" value="Submit"/>
-                </form>
-                </div>
+                <Form></Form>
             </div>
         )
     }
